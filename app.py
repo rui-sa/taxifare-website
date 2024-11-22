@@ -78,9 +78,10 @@ fare = response.json().get('fare')
 print(fare)
 
 if st.button('Calculate'):
-    st.write(fare)
+    st.write('Calculating your price')
+    st.write("Your fare is:", fare)
 else:
-    st.write('I was not clicked')
+    st.write('Click me to get your fare')
 
 
 # http://127.0.0.1:8000/predict?pickup_datetime=2014-07-06+19:18:00&pickup_longitude=-73.950655&pickup_latitude=40.783282&dropoff_longitude=-73.984365&dropoff_latitude=40.769802&passenger_count=2
