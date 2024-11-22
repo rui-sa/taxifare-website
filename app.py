@@ -15,7 +15,6 @@ if url == 'https://taxifare.lewagon.ai/predict':
     st.markdown('Maybe you want to use your own API for the prediction, not the one provided by Le Wagon...')
 
 
-
 date = st.date_input("Date")
 time = st.time_input("Time") #step parameter not working
 date_str = date.strftime("%Y-%m-%d")
