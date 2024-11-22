@@ -36,12 +36,11 @@ params = {
     "passenger_count": passenger_count
 }
 
-response = requests.get(url, params=params)
-fare = response.json().get('fare')
-print(fare)
 
 if st.button('Calculate'):
     st.write('Calculating your price')
+    response = requests.get(url, params=params)
+    fare = response.json().get('fare')
     st.write("Your fare is:", fare)
 else:
     st.write('Click me to get your fare')
